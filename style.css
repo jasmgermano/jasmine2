@@ -27,9 +27,11 @@ nav ul li a {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 35%;
     padding-right: 200px;
+    gap: 20px;
+    white-space: nowrap
 }
 
 nav a img {
@@ -210,6 +212,7 @@ button:hover {
 
 .filmes-texto {
     width: 37%;
+    z-index: 1;
 }
 
 .filmes-texto h1 {
@@ -333,6 +336,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .contato-item {
@@ -359,4 +363,105 @@ nav .logo {
 #contato .logo {
     text-align: center;
     padding: 10px 0;
+}
+
+@media (max-width: 1300px) {
+    .princesa, .encanto, .moana {
+        height: 250px;
+    }
+    
+    .filmes p {
+        font-size: 0.5em;
+    }
+    
+    .filmes-texto h1 {
+        font-size: 1.4em;
+    }
+    
+    .filmes-texto p {
+        font-size: 1em;
+    }
+    
+    #passatempos h5 {
+        font-size: 1em;
+    }
+    
+    .passatempo {
+        width: 30%;
+        height: 300px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7em;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    #quemsou p {
+        width: 40%;
+    }
+
+    .passatempos-container {
+        flex-direction: column;
+    }
+
+    .passatempo {
+        width: 70%;
+    }
+
+    .filmes-container {
+        flex-direction: column;
+    }
+
+    .princesa, .encanto, .moana {
+        height: 200px;
+    }
+
+    .filmes-texto {
+        width: 90%;
+        z-index: 1;
+    }
+
+    .passatempo-svg-bottom {
+        margin-top: 0px;
+    }
+
+    #curiosidade div {
+        width: 40%;
+    }
+
+    #curiosidade img {
+        width: 200px;
+    }
+
+    .formacao-container {
+        flex-direction: column;
+    }
+
+    .formacao-item {
+        width: 70%;
+    }
+
+    .svg-contato {
+        width: 700%;
+    }
+
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .contato-item h5 {
+        font-size: 1.3em;
+    }
 }
