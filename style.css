@@ -424,8 +424,12 @@ nav .logo {
         flex-direction: column;
     }
 
+    .filmes {
+        gap: 5px;
+    }
+
     .princesa, .encanto, .moana {
-        height: 170px;
+        height: 150px;
     }
 
     .filmes-texto {
